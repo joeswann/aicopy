@@ -26,12 +26,12 @@ This Python script allows you to copy the contents of multiple files or entire d
    pip install pyperclip
    ```
 
-3. Download the script and save it as `file_to_clipboard.py` (or any name you prefer).
+3. Download the script and save it as `aicopy.py` (or any name you prefer).
 
 ## Usage
 
 ```
-python file_to_clipboard.py [-h] [-e EXCLUDE] PATH [PATH ...]
+python aicopy.py [-h] [-e EXCLUDE] PATH [PATH ...]
 ```
 
 ### Arguments
@@ -45,24 +45,24 @@ python file_to_clipboard.py [-h] [-e EXCLUDE] PATH [PATH ...]
 1. Copy a single file:
 
    ```
-   python file_to_clipboard.py path/to/file.py
+   python aicopy.py path/to/file.py
    ```
 
 2. Copy multiple files using glob patterns:
 
    ```
-   python file_to_clipboard.py *.py *.js
+   python aicopy.py *.py *.js
    ```
 
 3. Copy an entire directory:
 
    ```
-   python file_to_clipboard.py path/to/directory
+   python aicopy.py path/to/directory
    ```
 
 4. Copy files while excluding specific patterns:
    ```
-   python file_to_clipboard.py . -e *.log -e temp/*
+   python aicopy.py . -e *.log -e temp/*
    ```
 
 ## How It Works
